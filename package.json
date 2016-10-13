@@ -1,0 +1,45 @@
+{
+  "name": "aframe-yes-no",
+  "version": "1.0.0",
+  "description": "A-Frame Yes/No Questions",
+  "private": true,
+  "main": "aframe-js/yes-no.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "fft-js": "0.0.9"
+  },
+  "peerDependencies": {
+    "aframe": "^0.3.1"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "budo": "^9.2.0",
+    "mkdirp": "0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdirp dist/ &&  browserify js/aframe-yes-no.js -o dist/aframe-yes-no.js",
+    "dev": "budo examples/main.js:build.js --dir examples --port 8008 --live --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andygill/aframe-yes-no.git"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-component",
+    "aframe-vr",
+    "vr",
+    "mozvr",
+    "webvr",
+    "input"
+  ],
+  "author": "Andy Gill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andygill/aframe-yes-no/issues"
+  },
+  "homepage": "https://github.com/andygill/aframe-yes-no"
+}
