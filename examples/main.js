@@ -1,2 +1,2 @@
-require('aframe');
-require('../js/aframe-frp.js');
+// require('aframe');
+require('../js/aframe-yes-no.js');
